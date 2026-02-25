@@ -10,7 +10,7 @@
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
-    --primary: 142.1 70.6% 25.3%; /* Seu verde: #15803d */
+    --primary: 142.1 70.6% 25.3%; /* Nosso Verde LicitaNorte: #15803d */
     --primary-foreground: 210 40% 98%;
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -29,8 +29,11 @@
 
 @layer base {
   body {
-    @apply bg-background text-foreground antialiased;
-    /* Padrão de grade super moderno e sutil para o fundo */
+    /* O ERRO ESTAVA AQUI: Removemos o @apply bg-background problemático */
+    @apply antialiased;
+    color: hsl(222.2 84% 4.9%);
+    
+    /* Padrão de grade premium (Estilo Vercel/Linear) */
     background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
     background-size: 32px 32px;
     background-color: #fafafa;
