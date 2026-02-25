@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { createBrowserClientSupabase } from '@/lib/supabase';
+import { createBrowserClientSupabase } from '@/lib/supabase-client';
 import { useRouter } from 'next/navigation';
 import { User, LogOut, Radar, Menu } from 'lucide-react';
 
